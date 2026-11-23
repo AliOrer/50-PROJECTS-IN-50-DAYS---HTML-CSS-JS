@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Starter</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Project Starter</h1>
-    <script src="app.js"></script>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">StarterApp</a>
+      <button id="theme-toggle" class="btn btn-secondary" type="button" aria-label="Tema değiştir">
+        Koyu Tema
+      </button>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="hero">
+      <h1>Yeni Projen Hazır</h1>
+      <p class="subtitle">
+        HTML, CSS ve JavaScript ile oluşturulmuş temiz başlangıç şablonu.
+      </p>
+      <div class="actions">
+        <button id="action-btn" class="btn btn-primary" type="button">
+          Tıkla: <span id="click-count">0</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="status-box" aria-live="polite">
+      <strong>Durum:</strong> <span id="status-text">Uygulama başlatıldı.</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>HTML · CSS · JavaScript Starter</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
