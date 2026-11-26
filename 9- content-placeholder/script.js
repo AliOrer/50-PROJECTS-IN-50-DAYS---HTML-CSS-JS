@@ -6,24 +6,21 @@ const name = document.getElementById('name')
 const date = document.getElementById('date')
 
 const animated_bgs = document.querySelectorAll('.animated-bg')
-const animated_bg_text = document.querySelectorAll('.animated-bg-text')
+const animated_bg_texts = document.querySelectorAll('.animated-bg-text')
 
 setTimeout(getData, 2500)
 
-function getDate(){
-    header.innerHTML = '<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="" />'
- 
-    title.innerHTML = 'Lorem ipsum dolor sit amet'
-  
-    excerpt.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis'
- 
-    profile_img.innerHTML =  '<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="" />'
+function getData() {
+  header.innerHTML =
+    '<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="" />'
+  title.innerHTML = 'Lorem ipsum dolor sit amet'
+  excerpt.innerHTML =
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis'
+  profile_img.innerHTML =
+    '<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="" />'
+  name.innerHTML = 'Ali Örer'
+  date.innerHTML = 'Oct 26, 2026'
 
-    name.innerHTML = 'Ali Örer'
-    
-    date.innerHTML = 'Oct 26, 2026'
-
-
-    animated_bgs.forEeach((bg) => bg.classList.remove('animated-bg'))
-    animated_bg_text.forEach((bg) => bg.classList.remove('animated-bg-text'))
+  animated_bgs.forEach((bg) => bg.classList.remove('animated-bg'))
+  animated_bg_texts.forEach((bg) => bg.classList.remove('animated-bg-text'))
 }
